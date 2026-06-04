@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEE Advanced 2026 | Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="exam-container">
+    <div class="exam-header">
+      <div class="exam-badge">
+        <div class="india-logo">🇮🇳</div>
+        <div class="exam-title-section">
+          <h1>JOINT ENTRANCE EXAMINATION</h1>
+          <h2>JEE (Advanced) 2026</h2>
+          <p>Conducted by INDIAN INSTITUTE OF TECHNOLOGY</p>
+        </div>
+      </div>
+      <div class="roll-code">
+        <span>Registration No: <strong>NEW2026XXXX</strong></span>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-header">
+        <h3>✧ CANDIDATE REGISTRATION FORM ✧</h3>
+        <p>Fields marked with <span class="asterisk">*</span> are mandatory</p>
+      </div>
+
+      <form id="examForm" action="#" method="post">
+        
+        <div class="form-section">
+          <div class="section-title">
+            <span class="section-number">1</span>
+            <h4>Personal Details</h4>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group half">
+              <label>Full Name <span class="asterisk">*</span></label>
+              <input type="text" id="fullname" name="fullname" placeholder="As per 10th certificate">
+              <small class="field-hint">Same as shown in matriculation certificate</small>
+            </div>
+            
+            <div class="form-group half">
+              <label>Date of Birth <span class="asterisk">*</span></label>
+              <input type="date" id="dob" name="dob">
+              <small class="field-hint">Must be between 01-Oct-2000 and 01-Oct-2008</small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group half">
+              <label>Father's Name <span class="asterisk">*</span></label>
+              <input type="text" id="fathername" name="fathername" placeholder="Father's full name">
+            </div>
+            
+            <div class="form-group half">
+              <label>Mother's Name <span class="asterisk">*</span></label>
+              <input type="text" id="mothername" name="mothername" placeholder="Mother's full name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group third">
+              <label>Gender <span class="asterisk">*</span></label>
+              <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group third">
+              <label>Category <span class="asterisk">*</span></label>
+              <select id="category" name="category">
+                <option value="">Select Category</option>
+                <option value="general">General (UR)</option>
+                <option value="obc-ncl">OBC-NCL</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="ews">EWS</option>
+              </select>
+            </div>
+            
+            <div class="form-group third">
+              <label>PwD Status</label>
+              <select id="pwd" name="pwd">
+                <option value="no">No</option>
+                <option value="yes">Yes (Percentage ≥40%)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-title">
+            <span class="section-number">2</span>
+            <h4>Contact & Communication</h4>
+          </div>
+          
+          <div class="form-group full-width">
+            <label>Email Address <span class="asterisk">*</span></label>
+            <input type="email" id="email" name="email" placeholder="youremail@example.com">
+            <small class="field-hint">All exam notifications will be sent to this email</small>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group half">
+              <label>Mobile Number <span class="asterisk">*</span></label>
+              <input type="tel" id="mobile" name="mobile" placeholder="10-digit number" maxlength="10">
+            </div>
+            
+            <div class="form-group half">
+              <label>Alternate Number</label>
+              <input type="tel" id="altmobile" name="altmobile" placeholder="Optional" maxlength="10">
+            </div>
+          </div>
+          
+          <div class="form-group full-width">
+            <label>Permanent Address <span class="asterisk">*</span></label>
+            <textarea id="address" name="address" rows="3" placeholder="House No., Street, City, State, PIN Code"></textarea>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-title">
+            <span class="section-number">3</span>
+            <h4>Academic Qualifications</h4>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group half">
+              <label>Class 10th Board <span class="asterisk">*</span></label>
+              <input type="text" id="board10" name="board10" placeholder="e.g., CBSE, ICSE, State Board">
+            </div>
+            
+            <div class="form-group half">
+              <label>Year of Passing <span class="asterisk">*</span></label>
+              <input type="number" id="year10" name="year10" placeholder="YYYY" min="2018" max="2026">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group half">
+              <label>Class 12th Board <span class="asterisk">*</span></label>
+              <input type="text" id="board12" name="board12" placeholder="e.g., CBSE, ICSE, State Board">
+            </div>
+            
+            <div class="form-group half">
+              <label>Year of Passing/Appearing <span class="asterisk">*</span></label>
+              <input type="number" id="year12" name="year12" placeholder="YYYY" min="2024" max="2026">
+            </div>
+          </div>
+          
+          <div class="form-group full-width">
+            <label>Subjects in Class 12 <span class="asterisk">*</span></label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="subject" value="physics"> Physics</label>
+              <label><input type="checkbox" name="subject" value="chemistry"> Chemistry</label>
+              <label><input type="checkbox" name="subject" value="mathematics"> Mathematics</label>
+              <label><input type="checkbox" name="subject" value="biology"> Biology</label>
+              <label><input type="checkbox" name="subject" value="computer"> Computer Science</label>
+              <label><input type="checkbox" name="subject" value="other"> Other</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-title">
+            <span class="section-number">4</span>
+            <h4>Exam Preferences</h4>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group half">
+              <label>Preferred Exam Center (Zone) <span class="asterisk">*</span></label>
+              <select id="zone" name="zone">
+                <option value="">Select Zone</option>
+                <option value="iit-delhi">IIT Delhi Zone (North)</option>
+                <option value="iit-bombay">IIT Bombay Zone (West)</option>
+                <option value="iit-madras">IIT Madras Zone (South)</option>
+                <option value="iit-kharagpur">IIT Kharagpur Zone (East)</option>
+                <option value="iit-guwahati">IIT Guwahati Zone (North-East)</option>
+              </select>
+            </div>
+            
+            <div class="form-group half">
+              <label>Medium of Question Paper <span class="asterisk">*</span></label>
+              <select id="medium" name="medium">
+                <option value="">Select Medium</option>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="gujarati">Gujarati</option>
+                <option value="tamil">Tamil</option>
+                <option value="telugu">Telugu</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="declaration-box">
+          <label class="checkbox-label">
+            <input type="checkbox" id="declaration" name="declaration">
+            <span>I hereby declare that all the information provided above is true and correct to the best of my knowledge. I understand that furnishing false information may lead to cancellation of candidature. <span class="asterisk">*</span></span>
+          </label>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" id="submitBtn" class="btn-primary">✓ Register for Examination</button>
+          <button type="button" id="resetBtn" class="btn-secondary">⟳ Reset Form</button>
+        </div>
+
+        <div id="formFeedback" class="feedback-area"></div>
+      </form>
+    </div>
+
+    <div class="exam-footer">
+      <p>© 2026 JEE (Advanced) | All rights reserved | Helpline: 1800-XXX-XXXX</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
